@@ -82,7 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'apiblogs',
         'USER':'Yogesh',
-        'PASSWORD':'Barcelona@58'
+        'PASSWORD':'Barcelona@58',
+        'HOST':'.vercel.app',
+        'PORT':'5432'
     }
 }
 

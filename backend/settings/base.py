@@ -80,11 +80,11 @@ CORS_ORIGIN_WHITELIST = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'apiblogs',
-        'USER':'Yogesh',
-        'PASSWORD':'Barcelona@58',
-        'HOST':'.vercel.app',
-        'PORT':'5432'
+        'NAME': 'railway',
+        'USER':'postgres',
+        'PASSWORD':'QWiUI0gN6MeEAZ66wGAr',
+        'HOST':'containers-us-west-93.railway.app',
+        'PORT':'8061'
     }
 }
 

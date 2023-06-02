@@ -1,4 +1,4 @@
 echo "BUILD STATRT"
 python3.9 -m pip install -r requirements.txt
 python3.9 manage.py collecstatic
-echo "BUILD END"
+echo "BUILD ENDER"

@@ -70,11 +70,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
-    'https://portfolio-yogesh.vercel.app',
+    'http://localhost:3000/',
+    'https://portfolio-yogesh.vercel.app'
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://mapi-provider.vercel.app'
+    'https://portfolio-yogesh.vercel.app',
+    'http://localhost:3000'
 ]
 
 CORS_ALLOW_METHODS = [

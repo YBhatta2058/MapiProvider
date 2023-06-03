@@ -74,7 +74,7 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://mapi-provider.vercel.app/admin/'
+    'https://mapi-provider.vercel.app'
 ]
 
 CORS_ALLOW_METHODS = [
@@ -163,3 +163,4 @@ AWS_S3_SIGNATURE_VERSION = 's3v4'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATIC_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'

@@ -71,11 +71,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'https://mapi-provider.vercel.app/',
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://mapi-provider.vercel.app/'
+    'https://mapi-provider.vercel.app/admin/'
 ]
 
 CORS_ALLOW_METHODS = [

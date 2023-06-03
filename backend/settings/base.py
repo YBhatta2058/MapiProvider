@@ -41,8 +41,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -71,6 +71,23 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+    'https://mapi-provider.vercel.app/',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'https://mapi-provider.vercel.app/'
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    # Other allowed methods
+]
+
+CORS_ALLOW_HEADERS = [
+    'Authorization',
+    'Content-Type',
+    # Other allowed headers
 ]
 
 # Database
@@ -147,8 +164,3 @@ AWS_S3_SIGNATURE_VERSION = 's3v4'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-from storages.backends.s3boto3 import S3Boto3Storage
-
-# StaticRootS3BotoStorage = lambda: S3Boto3Storage(location = '/static')
-# MediaRootS3BotoStorage = lambda: S3Boto3Storage(location = '/media')
